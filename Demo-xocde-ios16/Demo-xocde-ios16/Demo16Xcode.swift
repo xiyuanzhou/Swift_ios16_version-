@@ -10,16 +10,32 @@ import SwiftUI
 struct Demo16Xcode: View {
     var body: some View {
         VStack {
-            Image(systemName: "globe")
+            Image(systemName: "gamecontroller.fill")
                 .imageScale(.large)
                 .foregroundColor(.accentColor)
+            Image(systemName: "globe.central.south.asia")
+                .aspectRatio(contentMode: .fit)
+                .imageScale(.large)
+                .foregroundColor(.accentColor)
+            
             Text("成功hello world 12").font(.title).fontWeight(.black).foregroundColor(Color.green)
                 .background(Color.black)
                 .cornerRadius(15)
                 .shadow(color: Color.black.opacity(5), radius: 10,x:5,y:6)
                 .padding()
+            
             Text("Happy Coding").font(.title)
                 .fontWeight(.bold)
+                .foregroundColor(.red)
+            Text("傻逼").font(.title)
+                .foregroundColor(.red)
+                .fontWeight(.bold)
+            Text("傻逼").font(.title)
+                .fontWeight(.bold)
+                .foregroundColor(.blue)
+            Text("傻逼").font(.title)
+                .fontWeight(.bold)
+                .foregroundColor(.blue)
         }
         .padding()
     }
