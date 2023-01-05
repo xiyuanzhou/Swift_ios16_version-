@@ -1,5 +1,8 @@
 import Cocoa
 
+func printDash(){
+    print("----------------------")
+}
 //variables are mutable, can change
 //(let) constant are immutable, can't change
 
@@ -33,3 +36,55 @@ for i in list1 {
 for i in list2{
     print("\(i) this is numbers")
 }
+
+
+printDash()
+
+struct PersonWithHobby {
+    let name: String
+    let hobby: String
+}
+
+let people: [PersonWithHobby] = [
+    PersonWithHobby(name: "lucas", hobby: "hiking"),
+    PersonWithHobby(name: "summer", hobby: "uiui"),
+    PersonWithHobby(name: "kevin", hobby: "computer"),
+]
+
+for i in people {
+    print("\(i.name.capitalized) like to \(i.hobby)")
+}
+
+printDash()
+
+struct PersonHobby {
+    let name: String
+    let hobby: String?
+}
+
+let people2: [PersonHobby] = [
+    PersonHobby(name: "lucas", hobby: "hiking"),
+    PersonHobby(name: "summer", hobby: "uiui"),
+    PersonHobby(name: "kevin", hobby: nil),
+]
+
+for i in people2{
+    if let hobby1 = i.hobby{ // if i.hobby != nil
+        print("\(i.name.capitalized) hobby is \(hobby1)")
+    }else{
+        print("\(i.name.capitalized) no hobby")
+    }
+}
+
+printDash()
+
+var x: Int = 4
+var y: Int? = 7
+
+if y != nil{
+    print("not null")
+}
+else{
+    print("nil")
+}
+ 

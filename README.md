@@ -22,8 +22,50 @@
         print("\(i) \(greeting)")
     }
 ```
-> Break 🧸
+> `Break` 🧸
 
 ### Structs / array structs
+```Swift
+    struct PersonWithHobby {
+        let name: String
+        let hobby: String
+    } 
 
+    let people: [PersonWithHobby] = [
+        PersonWithHobby(name: "lucas", hobby: "hiking"),
+        PersonWithHobby(name: "summer", hobby: "uiui"),
+        PersonWithHobby(name: "kevin", hobby: "computer"),
+    ]
+
+    for i in people {
+        print("\(i.name.capitalized) like to \(i.hobby)")
+    }
+```
+> `Break` 🧸
+
+### Optional and if statment
+> nil and null are equal 
+```Swift
+    struct PersonHobby {
+        let name: String
+        let hobby: String?
+    }
+
+    let people2: [PersonHobby] = [
+        PersonHobby(name: "lucas", hobby: "hiking"),
+        PersonHobby(name: "summer", hobby: "uiui"),
+        PersonHobby(name: "kevin", hobby: nil),
+    ]
+
+    for i in people2{
+        if let hobby1 = i.hobby{ // if i.hobby != nil
+            print("\(i.name.capitalized) hobby is \(hobby1)")
+        }else{
+            print("\(i.name.capitalized) no hobby")
+        }
+    }
+```
+> `Break` 🧸
+
+### Int, Double, Float, Type 
 
