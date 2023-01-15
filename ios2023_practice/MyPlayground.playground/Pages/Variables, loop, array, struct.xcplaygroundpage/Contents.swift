@@ -88,3 +88,34 @@ else{
     print("nil")
 }
  
+printDash()
+
+//more loop
+for i in -3..<3{
+    print(i)
+}
+print()
+
+for i in -3...3{
+    print(i)
+}
+
+print()
+var sums = 0
+var k = 0
+
+while k < 10{
+    print(k)
+    k += 1
+    
+
+}
+print(sums)
+
+var i = 1
+let n = 10
+
+repeat{
+    print(i)
+    i = i + 1
+}while( i <= n)
